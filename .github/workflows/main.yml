@@ -19,4 +19,8 @@ jobs:
       with:
         mdbook-version: 'latest'
 
-    - run: mdbook test
+    - name: mdbook build and test
+      run: |
+        mdbook build
+        mdbook test
+      
