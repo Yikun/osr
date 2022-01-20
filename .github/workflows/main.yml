@@ -17,4 +17,4 @@ jobs:
     - name: Install Rust (rustup)
       run: rustup update stable --no-self-update && rustup default stable
     - name: Build book
-      run: cargo run -- build src
+      run: cargo run -- build .
